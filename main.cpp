@@ -8,6 +8,8 @@ int main()
     std::cout << "Hello " << name << std::endl; // std::endl is used to end the line.
 
     int age = 22;
+    int age{22};     // Protects against narrowing conversions.
+
     std::cout << "Age: " << age << std::endl;
 
     return 0;
