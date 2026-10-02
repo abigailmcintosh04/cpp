@@ -12,6 +12,11 @@ int main()
 
     [[maybe_unused]] double pi{3.14159};
 
+    std::cout << "Enter a number: ";
+    int x{};
+    std::cin >> x;
+    std::cout << "You entered: " << x << "\n";
+
     return 0;
 }
 
