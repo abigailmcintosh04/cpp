@@ -4,10 +4,8 @@
 int main() 
 {
     std::string name = "Abi";   // strings require double quotes.
-    char b = 'b';
     std::cout << "Hello " << name << std::endl; // std::endl is used to end the line.
 
-    int age = 22;
     int age{22};     // Protects against narrowing conversions.
 
     std::cout << "Age: " << age << std::endl;
