@@ -8,7 +8,9 @@ int main()
 
     int age{22};     // Protects against narrowing conversions.
 
-    std::cout << "Age: " << age << std::endl;
+    std::cout << "Age: " << age << '\n';    // '\n' a lot faster than std::endl.
+
+    [[maybe_unused]] double pi{3.14159};
 
     return 0;
 }
