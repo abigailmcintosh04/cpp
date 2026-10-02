@@ -1,7 +1,8 @@
 #include <iostream>
 
-int main()
+// All C++ programs must have a main function. 
+int main() 
 {
-    std::cout << "Here is some text.";
+    std::cout << "Hello world";
     return 0;
 }
