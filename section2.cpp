@@ -12,7 +12,7 @@ int get_age() {
 }
 int main() {
     say_hello();
-    int age = get_age();
+    int age{get_age()};
     std::cout << "You are " << age << " years old." << "\n";
 
     return 0;
