@@ -17,6 +17,9 @@ int main() {
     std::cin >> x;
     std::cout << "You entered: " << x << "\n";
 
+    std::cout << 3 + 4 * 8 - (5 + 2)
+              << "\n";  // C++ follows order of operations.
+
     return 0;
 }
 
