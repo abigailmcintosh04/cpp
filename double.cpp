@@ -6,9 +6,8 @@ int main() {
     int x{};
     std::cin >> x;
 
-    x = x * 2;
-
-    std::cout << "Double of the number is: " << x << "\n";
+    // Value of x not altered.
+    std::cout << "Double of the number is: " << x * 2 << "\n";
 
     return 0;
 }
