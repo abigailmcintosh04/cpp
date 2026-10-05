@@ -2,13 +2,12 @@
 
 // All C++ programs must have a main function.
 int main() {
-    std::string name = "Abi";  // strings require double quotes.
-    std::cout << "Hello " << name
-              << std::endl;  // std::endl is used to end the line.
+    std::string name = "Abi";                   // strings require double quotes.
+    std::cout << "Hello " << name << std::endl; // std::endl is used to end the line.
 
-    int age{22};  // Protects against narrowing conversions.
+    int age{22}; // Protects against narrowing conversions.
 
-    std::cout << "Age: " << age << '\n';  // '\n' a lot faster than std::endl.
+    std::cout << "Age: " << age << '\n'; // '\n' a lot faster than std::endl.
 
     [[maybe_unused]] double pi{3.14159};
 
@@ -17,8 +16,7 @@ int main() {
     std::cin >> x;
     std::cout << "You entered: " << x << "\n";
 
-    std::cout << 3 + 4 * 8 - (5 + 2)
-              << "\n";  // C++ follows order of operations.
+    std::cout << 3 + 4 * 8 - (5 + 2) << "\n"; // C++ follows order of operations.
 
     return 0;
 }
