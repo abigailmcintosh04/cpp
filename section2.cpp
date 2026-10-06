@@ -11,7 +11,8 @@ int get_age() {
     return age;
 }
 
-int double_age(int age) { return age * 2; }
+// Forward declaration.
+int double_age(int age);
 
 // main required to return int, and cannot be called.
 int main() {
@@ -22,3 +23,5 @@ int main() {
 
     return 0;
 }
+
+int double_age(int age) { return age * 2; }
