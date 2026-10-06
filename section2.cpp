@@ -1,5 +1,8 @@
 #include <iostream>
 
+// Forward declaration of function in second_file.cpp
+int double_age(int age);
+
 // Cannot nest functions in C++.
 void say_hello() { std::cout << "Hello world" << "\n"; }
 
@@ -11,9 +14,6 @@ int get_age() {
     return age;
 }
 
-// Forward declaration.
-int double_age(int age);
-
 // main required to return int, and cannot be called.
 int main() {
     say_hello();
@@ -23,5 +23,3 @@ int main() {
 
     return 0;
 }
-
-int double_age(int age) { return age * 2; }

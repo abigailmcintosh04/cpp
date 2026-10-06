@@ -1,0 +1,1 @@
+int double_age(int age) { return age * 2; }
