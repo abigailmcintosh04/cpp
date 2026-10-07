@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 
 int main() {
@@ -26,12 +27,19 @@ int main() {
     // Division of integers results in an integer
     std::cout << "8 / 5 = " << 8 / 5 << "\n";
 
-    // Unsigned integers can only represent positive values.
+    // Unsigned integers can only represent positive values
     unsigned short f{65535};
-    std::cout << f << "\n";
-
     f = f + 1; // Overflow occurs here, wraps around to 0
     std::cout << "65535 + 1 = " << f << "\n";
+
+    // Can have fixed width integers with the <cstdint> header
+    std::int32_t g{65535};
+    g = g + 1; // No overflow occurs here, equals 65536
+    std::cout << "65535 + 1 = " << g << "\n";
+
+    // 8 bit integers typically treated as characters
+    std::int8_t h{67};
+    std::cout << "67 is " << h << "\n";
 
     return 0;
 }
