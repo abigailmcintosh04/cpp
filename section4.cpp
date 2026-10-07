@@ -124,12 +124,38 @@ int if_statements() {
     return 0;
 }
 
+// Characters.
+int chars() {
+
+    // Can be initialised with integer, should be avoided.
+    char char2{97};
+    char char1{'a'};
+
+    std::cout << "char1 is " << char1 << "\n";
+    std::cout << "char2 is " << char2 << "\n";
+
+    // Shows that whitespace is skipped.
+    std::cout << "Input two characters separated by a space: ";
+    char char3{};
+
+    // Shows behaviour of the input buffer.
+    std::cin >> char3;
+    std::cout << "You entered " << char3 << "\n";
+    std::cin >> char3;
+    std::cout << "You entered " << char3 << "\n";
+
+    std::cout << "Use backslash_n\nfor a new line, backslash_t\tfor a tab.\n";
+
+    return 0;
+}
+
 int main() {
 
-    integers();
-    floats();
-    booleans();
-    if_statements();
+    // integers();
+    // floats();
+    // booleans();
+    // if_statements();
+    chars();
 
     return 0;
 }
