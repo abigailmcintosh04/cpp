@@ -120,6 +120,8 @@ int if_statements() {
     } else {
         std::cout << "Zero\n";
     }
+
+    return 0;
 }
 
 int main() {
