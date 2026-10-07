@@ -1,12 +1,11 @@
+#include "sec2.h"
+
 #include <iostream>
 
 // Macros can be used to define constants. Tend to avoid.
 #define E 2.71828
 
 /* using namespace std; // Not recommended. */
-
-// Forward declaration of function in second_file.cpp
-int double_age(int age);
 
 // Cannot nest functions in C++.
 void say_hello() { std::cout << "Hello world" << "\n"; }
