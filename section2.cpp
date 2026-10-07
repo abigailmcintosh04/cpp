@@ -1,5 +1,7 @@
 #include <iostream>
 
+/* using namespace std; // Not recommended. */
+
 // Forward declaration of function in second_file.cpp
 int double_age(int age);
 
