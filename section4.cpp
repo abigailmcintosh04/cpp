@@ -1,9 +1,9 @@
 #include <cstdint>
+#include <iomanip>
 #include <iostream>
 
-int main() {
-
-    // Integer types
+// Integer types
+int integers() {
 
     // 16-bit integer
     short a{32767};
@@ -40,6 +40,41 @@ int main() {
     // 8 bit integers typically treated as characters
     std::int8_t h{67};
     std::cout << "67 is " << h << "\n";
+
+    return 0;
+}
+
+// Floating point types
+int floats() {
+
+    // 32-bit floating point
+    float a{3.14159f};
+    std::cout << "Size of float: " << sizeof(a) << " bytes" << "\n";
+
+    // 64-bit floating point
+    double b{3.14159};
+    std::cout << "Size of double: " << sizeof(b) << " bytes" << "\n";
+
+    // 64, 128 or 256-bit floating point
+    long double c{3.14159L};
+    std::cout << "Size of long double: " << sizeof(c) << " bytes" << "\n";
+
+    // Scientific notation
+    float d{6.7e40f};
+    std::cout << "6.7e40f is " << d << "\n"; // Displays inf as breaks range.
+
+    // Floating point precision
+    std::cout << std::setprecision(20);
+    std::cout << "float: " << 1.0f / 3.0f << "\n";
+    std::cout << "double: " << 1.0 / 3.0 << "\n";
+
+    return 0;
+}
+
+int main() {
+
+    integers();
+    floats();
 
     return 0;
 }
