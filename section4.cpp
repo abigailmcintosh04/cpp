@@ -24,12 +24,14 @@ int main() {
     // signed short int e{69};
 
     // Division of integers results in an integer
-    std::cout << 8 / 5 << "\n";
+    std::cout << "8 / 5 = " << 8 / 5 << "\n";
 
     // Unsigned integers can only represent positive values.
     unsigned short f{65535};
     std::cout << f << "\n";
-    std::cout << f + 1 << "\n";
+
+    f = f + 1; // Overflow occurs here, wraps around to 0
+    std::cout << "65535 + 1 = " << f << "\n";
 
     return 0;
 }
