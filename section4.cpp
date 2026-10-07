@@ -71,10 +71,63 @@ int floats() {
     return 0;
 }
 
+int booleans() {
+
+    // Default initialisation of false.
+    bool a{};
+
+    // Bool size typically one byte.
+    std::cout << "Size of bool: " << sizeof(a) << " bytes" << "\n";
+
+    // Can be true or false.
+    bool b{true};
+    bool c{false};
+
+    std::cout << "b is " << b << "\n";
+    std::cout << "c is " << c << "\n";
+
+    std::cout << std::boolalpha; // Display bools as true or false instead of 1 or 0.
+    std::cout << "b is " << b << "\n";
+    std::cout << "c is " << c << "\n";
+
+    // bool d{4}; // Non-zero values are true. Throws warning.
+
+    // Integer to boolean conversion.
+    bool d{};
+    std::cout << "Enter a bool: ";
+
+    // Allows user to input true or false instead of 0 or 1.
+    std::cin >> std::boolalpha;
+    std::cin >> d;
+
+    std::cout << std::boolalpha;
+    std::cout << "You entered " << d << "\n";
+
+    return 0;
+}
+
+// if-else statements
+int if_statements() {
+
+    std::cout << "Enter a number: ";
+    int x{};
+    std::cin >> x;
+
+    if (x < 0) {
+        std::cout << "Negative\n";
+    } else if (x > 0) {
+        std::cout << "Positive\n";
+    } else {
+        std::cout << "Zero\n";
+    }
+}
+
 int main() {
 
     integers();
     floats();
+    booleans();
+    if_statements();
 
     return 0;
 }
