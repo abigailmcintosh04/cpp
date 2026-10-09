@@ -46,10 +46,12 @@ void prepostfix(int a) {
     std::cout << "a++: " << d << "\n";
 }
 
+// Shows how conditional operator ?: works, can use instead of if/else.
+// Ensure to parenthesise.
 void cond_operator(int m, int n) {
     // Conditional operator ?: takes form:
     // condition ? statement1 : statement2;
-    int o{m > n ? m : n};
+    int o{(m > n) ? m : n};
     std::cout << "The max of " << m << " and " << n << " is " << o << "\n";
 }
 
