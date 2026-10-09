@@ -22,6 +22,10 @@ int main() {
     // constexpr is evaluted at compile time.
     constexpr double electron_charge{-1.602e-19};
 
+    // std::string_view has full support for constexpr.
+    constexpr std::string_view hw{"Hello World!"};
+    std::cout << hw << "\n";
+
     // Different bases.
     int a{0b101010}; // Binary.
     int b{0163};     // Octal. Avoid.
